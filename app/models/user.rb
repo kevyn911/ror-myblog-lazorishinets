@@ -8,8 +8,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
          has_many :posts
          has_many :postcomments
+
          has_many :photos
-         
+
          validates :nickname, :password, :email, presence: true 
          validates :nickname, length: { in: 6..15 }
          validates :nickname, :email, uniqueness: true
