@@ -1,0 +1,162 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.btn-block{
+	padding: 20px;
+}
+.buttonpost {
+	padding: 30px;
+	display: block;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+body {
+  margin-bottom: 250px;
+  background-color: #E7E5E5;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #111;
+  text-align: center;
+}
+.posts{
+	padding-left: 10%;
+}
+
+.container{
+  margin-top: 50px;
+  color: #fff;
+  width: 100%;
+}
+.notice {
+	color:red;
+	font-weight:bold;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.developer {
+	margin-right: 50%;
+	font-size: 25px;
+	color: #D8D8D8;
+}
+
+.fa-twitter {
+    color: #4099FF;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-youtube-play {
+    color: #e52d27;
+}
+
+.fa-rss {
+    color: #FF6600;
+}
+
+.fa-vine {
+    color: #00a478;
+}
+
+.fa-flickr {
+    color: #ff0084;
+}
+
+.fa-twitch {
+    color: #6441A5;
+}
+
+.fa-linkedin {
+    color: #007bb6;
+}
+
+.fa {
+    opacity: 0.7;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.fa:hover{
+    opacity: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+ }
+ 
+
+
+ @media screen and (max-width: 1370px) {
+	.developer {
+		margin-right: 33%;
+		font-size: 20px;
+		color: #D8D8D8;
+	}
+	}
+ @media screen and (max-width: 940px) {
+	.developer {
+		margin-right: 20%;
+		font-size: 16px;
+		color: #D8D8D8;
+	}
+	}
+  @media screen and (max-width: 730px) {
+	.developer {
+		text-align: center;
+		font-size: 16px;
+		color: #D8D8D8;
+		margin: auto;
+	}
+	.container{
+  	width: 35%;}
+  }
+   @media screen and (max-width: 670px) {
+	.developer {
+		text-align: center;
+		font-size: 12px;
+		color: #D8D8D8;
+		margin: auto;
+	}
+	.container{
+	  	width: 30%;}
+	.footer {
+	  	height: auto;
+	}
+  }
+  @media screen and (max-width: 613px) {
+	.developer {
+		text-align: center;
+		font-size: 12px;
+		color: #D8D8D8;
+		margin: auto;
+	}
+	.container{
+	  	width: 25%;}
+	.footer {
+	  	height: auto;
+	}
+  }

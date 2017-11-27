@@ -1,0 +1,9 @@
+<%= link_to "Upload photo", new_photo_path, class: "btn btn-warning btn-lg btn-block"%>
+<hr>
+<% if @photos == [] %>
+	<p>Photo ninchen</p>
+<% else %>
+ 	<% @photos.each do |photo| %>
+ 	<%=photo.name %>
+ 	<%end%>
+<%end%>
