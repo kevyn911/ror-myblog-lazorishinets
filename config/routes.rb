@@ -13,7 +13,12 @@ Rails.application.routes.draw do
   end  
 
 
-  resources :photos
+  resources :photos do
+    member do
+      get :vote
+    end
+  end
   
 
 end
+  

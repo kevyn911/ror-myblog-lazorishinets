@@ -4,7 +4,12 @@
 	<p>Photo ninchen</p>
 <% else %>
  	<% @photos.each do |photo| %>
- 	<%= image_tag(photo.photo_url) %>
- 	<%=photo.name %>
+ <div style="text-align: center;">
+ 	<%= image_tag(photo.photo_url, width: 640, height: 360) %>
+ 	<p style="color: #8B0000; font-size: 18px;"><b>Category: <%= photo.category.name %></b></p>
+ 	<p style="font-size: 18px;"><b>Title: <%=photo.name %></b></p>
+ 	<p style="color: #FF8C00; font-size: 18px;"><b>Author :<%=photo.user.nickname %></b></p>
+ 	<p style="font-size: 18px;"><b><%= link_to "Like", vote_photo_path(photo.id) %>: <%= @like[photo.id]%></b></p>
+ </div>
  	<%end%>
 <%end%>
